@@ -612,38 +612,48 @@
             <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
                 <table class="w-full min-w-[680px] border-collapse bg-white text-left">
                     <thead>
-                        <tr class="bg-slate-50 text-slate-700">
-                            <th class="px-5 py-4 text-sm font-extrabold border-b border-slate-200">항목</th>
-                            <th class="px-5 py-4 text-sm font-extrabold border-b border-slate-200">종이책 구매</th>
-                            <th class="px-5 py-4 text-sm font-extrabold border-b border-slate-200">한빛+ 디지털 교재</th>
+                        <tr class="text-slate-800">
+                            <th class="px-5 py-5 text-base font-black border-b border-slate-200 bg-slate-100">항목</th>
+                            <th class="px-5 py-5 text-base font-black border-b border-slate-200 bg-slate-100">종이책만 따로 구매할 경우</th>
+                            <th class="px-5 py-5 text-base font-black border-b border-blue-500 bg-blue-600 text-white shadow-inner">
+                                <span class="inline-flex items-center gap-2">
+                                    <iconify-icon icon="lucide:sparkles" width="18"></iconify-icon>
+                                    디지털 교재 패키지
+                                </span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="text-slate-700 font-semibold">
                         <tr>
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">교재 본문</td>
                             <td class="px-5 py-4 border-b border-slate-100">종이책 약 3만 원</td>
-                            <td class="px-5 py-4 border-b border-slate-100 text-blue-700 font-extrabold">전자책 본문 포함</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">전자책 본문 포함</td>
                         </tr>
                         <tr>
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">강의교안 연동</td>
-                            <td class="px-5 py-4 border-b border-slate-100">별도 제공 여부 확인 필요</td>
-                            <td class="px-5 py-4 border-b border-slate-100 text-blue-700 font-extrabold">포함</td>
+                            <td class="px-5 py-4 border-b border-slate-100">제공되지 않음</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">포함</td>
                         </tr>
                         <tr>
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">시험 대비 문제와 해설</td>
                             <td class="px-5 py-4 border-b border-slate-100">문제집 또는 별도 자료 필요</td>
-                            <td class="px-5 py-4 border-b border-slate-100 text-blue-700 font-extrabold">추가 연습문제와 풀이 포함</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">추가 연습문제와 풀이 포함</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">해설 영상</td>
+                            <td class="px-5 py-4 border-b border-slate-100">별도 영상 자료 필요</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">해설영상 포함</td>
                         </tr>
                         <tr>
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">AI 학습 도우미</td>
-                            <td class="px-5 py-4 border-b border-slate-100">별도 서비스 필요</td>
-                            <td class="px-5 py-4 border-b border-slate-100 text-blue-700 font-extrabold">AI 챗봇 포함</td>
+                            <td class="px-5 py-4 border-b border-slate-100">별도 서비스 가입</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">AI 챗봇 포함</td>
                         </tr>
                         <tr class="bg-blue-50/50">
-                            <td class="px-5 py-5 font-extrabold text-slate-900">가격 예시</td>
-                            <td class="px-5 py-5">3만 원 도서 기준</td>
-                            <td class="px-5 py-5">
-                                <span class="text-2xl font-black text-blue-700">21,300원 예시</span>
+                            <td class="px-5 py-5 font-extrabold text-slate-900">구매가 (3만 원 도서 기준)</td>
+                            <td class="px-5 py-5">각각 따로 구매</td>
+                            <td class="px-5 py-5 border-l border-blue-200 bg-blue-100/70">
+                                <span class="text-2xl font-black text-blue-700">21,300원</span>
                                 <span class="ml-1 text-slate-600">, 약 30% 낮은 가격</span>
                             </td>
                         </tr>
@@ -714,7 +724,7 @@
                             <p class="text-xs font-extrabold text-indigo-600 mb-1">STEP 3</p>
                             <h3 class="font-bold text-slate-800 text-base lg:text-lg mb-1">교재 확인 후 결제</h3>
                             <p class="text-sm font-bold text-slate-600 text-left md:text-center break-keep leading-relaxed">교재명, 구성, 가격을 확인하고<br
-                                    class="hidden md:block" />신용카드, 계좌이체 등으로 결제합니다.</p>
+                                    class="hidden md:block" />안내된 결제 수단으로 결제합니다.</p>
                         </div>
                     </div>
 
@@ -770,7 +780,25 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="pt-1">수업 관련 안내는 강좌 담당 교수님께, 한빛+ 이용 관련 문의는 한빛+ 고객센터를 이용해 주세요.</p>
+                        <div class="rounded-2xl bg-slate-900 text-white p-5 md:p-6 shadow-sm">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                                <div>
+                                    <p class="text-sm font-extrabold text-blue-200 mb-1">문의처</p>
+                                    <h4 class="text-lg md:text-xl font-extrabold">한빛아카데미 영업팀</h4>
+                                    <p class="mt-2 text-slate-300 font-semibold leading-relaxed">디지털 교재 이용이나 구매 과정에서 도움이 필요하면 문의해 주세요.</p>
+                                </div>
+                                <div class="grid gap-2 text-sm md:text-base font-bold text-slate-100">
+                                    <a href="mailto:hbacademy@hanbit.co.kr" class="inline-flex items-center gap-2 hover:text-blue-200">
+                                        <iconify-icon icon="lucide:mail" width="18"></iconify-icon>
+                                        hbacademy@hanbit.co.kr
+                                    </a>
+                                    <a href="tel:02-2128-8722" class="inline-flex items-center gap-2 hover:text-blue-200">
+                                        <iconify-icon icon="lucide:phone" width="18"></iconify-icon>
+                                        02-2128-8722
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1282,7 +1310,7 @@
                     </label>
                     <div class="faq-content bg-slate-50">
                         <div class="px-6 py-5 border-t border-slate-100 text-slate-600 leading-relaxed">
-                            수업 관련 안내는 강좌 담당 교수님께 확인하고, 한빛+ 이용 문의는 한빛+ 고객센터를 이용해 주세요.
+                            수업 관련 안내는 강좌 담당 교수님께 확인하고, 한빛+ 이용이나 구매 관련 문의는 hbacademy@hanbit.co.kr 또는 02-2128-8722로 연락해 주세요.
                         </div>
                     </div>
                 </div>
@@ -1297,9 +1325,12 @@
                 <img src="CI.png" alt="한빛+" class="h-8 opacity-80 brightness-0 invert"
                     onerror="this.src='https://via.placeholder.com/120x40?text=CI+LOGO'">
             </div>
-            <h3 class="text-lg font-bold mb-3 text-slate-200">한빛아카데미 / 한빛+ 디지털 교재</h3>
-            <p class="text-slate-400 text-sm mb-2">2026학년도 2학기 수강 학생 안내 자료입니다.</p>
-            <p class="text-slate-400 text-sm mb-8">문의는 강좌 담당 교수님 또는 한빛+ 고객센터로 연락 바랍니다.</p>
+            <h3 class="text-xl font-extrabold mb-4 text-slate-100">한빛아카데미 영업팀</h3>
+            <p class="text-slate-300 text-sm md:text-base mb-5">디지털 교재 이용이나 구매 과정에서 도움이 필요하면 문의해 주세요.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 text-slate-400 text-sm font-semibold mb-8">
+                <a href="mailto:hbacademy@hanbit.co.kr" class="hover:text-white transition">hbacademy@hanbit.co.kr</a>
+                <a href="tel:02-2128-8722" class="hover:text-white transition">02-2128-8722</a>
+            </div>
             <div class="border-t border-slate-700 pt-8">
                 <p class="text-slate-500 text-xs">© Hanbit Academy, Inc. All rights reserved.</p>
             </div>
