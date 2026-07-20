@@ -465,7 +465,7 @@
                 </h1>
                 <p class="text-lg md:text-xl text-slate-600 leading-[1.9] max-w-3xl">
                     교수님이 이 수업의 교재를 디지털 교재로 채택하셨습니다.<br />
-                    한빛+ 디지털 교재는 종이책 본문에 강의교안, 쉬운해설, 추가 연습문제, 해설영상, AI 챗봇이 함께 제공되는
+                    한빛+ 디지털 교재는 종이책 본문에 강의교안, 쉬운해설, 추가 연습문제, 해설영상, 용어사전, AI 챗봇이 함께 제공되는
                     <strong class="text-slate-800 font-semibold whitespace-nowrap">소장형 디지털 교재</strong>입니다.
                 </p>
                 <p class="mt-5 text-base md:text-lg text-slate-500 leading-[1.8] max-w-2xl font-medium">
@@ -520,7 +520,7 @@
                     1분 만에 보는 한빛+ 디지털 교재
                 </h2>
                 <p class="text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                    전자책 본문, 강의교안, 쉬운해설, 해설영상, 추가 연습문제, AI 챗봇이 한 화면에서 어떻게 연결되는지 확인해 보세요.
+                    전자책 본문, 강의교안, 쉬운해설, 해설영상, 추가 연습문제, 용어사전, AI 챗봇이 한 화면에서 어떻게 연결되는지 확인해 보세요.
                 </p>
             </div>
 
@@ -584,13 +584,24 @@
                 </div>
 
                 <div
-                    class="bento-card rounded-[2rem] p-8 bg-rose-50 border border-rose-100 shadow-lg md:col-span-2">
+                    class="bento-card rounded-[2rem] p-8 bg-rose-50 border border-rose-100 shadow-lg">
                     <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mb-5">
                         <iconify-icon icon="lucide:pencil-line" width="26"></iconify-icon>
                     </div>
                     <h3 class="text-2xl font-extrabold text-slate-900 mb-3">추가 연습문제</h3>
                     <p class="text-slate-700 font-semibold leading-relaxed">
                         배운 내용을 문제로 확인하고, 시험 전 복습 자료로 활용할 수 있습니다.
+                    </p>
+                </div>
+
+                <div
+                    class="bento-card rounded-[2rem] p-8 bg-teal-50 border border-teal-100 shadow-lg">
+                    <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center mb-5">
+                        <iconify-icon icon="lucide:book-open" width="26"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-3">용어사전</h3>
+                    <p class="text-slate-700 font-semibold leading-relaxed">
+                        교재 본문에 등장하는 낯선 용어를 쉽고 명확한 설명으로 바로 확인할 수 있습니다.
                     </p>
                 </div>
 
@@ -660,6 +671,11 @@
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">해설 영상</td>
                             <td class="px-5 py-4 border-b border-slate-100">별도 영상 자료 필요</td>
                             <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">해설영상 포함</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">용어 설명</td>
+                            <td class="px-5 py-4 border-b border-slate-100">별도 검색 필요</td>
+                            <td class="px-5 py-4 border-b border-slate-100 border-l border-blue-100 bg-blue-50/50 text-blue-700 font-extrabold">용어사전 포함</td>
                         </tr>
                         <tr>
                             <td class="px-5 py-4 border-b border-slate-100 font-extrabold text-slate-900">AI 학습 도우미</td>
@@ -827,7 +843,7 @@
                 </h2>
                 <p class="text-lg md:text-xl text-slate-600 leading-[1.8] max-w-3xl mx-auto font-medium break-keep">
                     자료를 이곳저곳에서 찾지 않아도 됩니다.<br class="hidden md:block" />
-                    전자책 본문, 강의교안, 쉬운해설, 해설영상, <span class="whitespace-nowrap">추가 연습문제</span>, AI 챗봇을<br class="hidden md:block" />
+                    전자책 본문, 강의교안, 쉬운해설, 해설영상, <span class="whitespace-nowrap">추가 연습문제</span>, 용어사전, AI 챗봇을<br class="hidden md:block" />
                     웹 버전과 앱 버전의 한빛+ 디지털 교재 안에서 <strong class="text-slate-800">함께 이용할 수 있습니다.</strong>
                 </p>
             </div>
@@ -891,13 +907,17 @@
                             class="absolute bottom-0 right-2 bg-emerald-100 text-emerald-600 p-3 rounded-2xl shadow-lg border border-emerald-200">
                             <iconify-icon icon="lucide:message-square-text" width="24"></iconify-icon>
                         </div>
+                        <div
+                            class="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-100 text-teal-600 p-3 rounded-2xl shadow-lg border border-teal-200">
+                            <iconify-icon icon="lucide:book-open" width="24"></iconify-icon>
+                        </div>
                         <div class="bg-blue-50 text-blue-500 p-3 rounded-2xl shadow-lg border border-blue-100">
                             <iconify-icon icon="lucide:presentation" width="24"></iconify-icon>
                         </div>
                     </div>
                     <div class="text-center">
                         <p class="font-bold text-slate-900 text-2xl mb-1">주요 부가서비스</p>
-                        <p class="text-lg text-slate-500 font-medium tracking-tight">교안·해설·영상·문제·AI 챗봇</p>
+                        <p class="text-lg text-slate-500 font-medium tracking-tight">교안·해설·영상·문제·용어·<span class="whitespace-nowrap">AI 챗봇</span></p>
                     </div>
                 </div>
 
@@ -976,7 +996,7 @@
                             <iconify-icon icon="lucide:sparkles"></iconify-icon> 주요 기능
                         </div>
                         <h3 class="text-3xl md:text-4xl font-bold mb-4 leading-tight tracking-tight text-slate-900">
-                            학습 흐름을 이어주는 5대 부가서비스
+                            학습 흐름을 이어주는 6대 부가서비스
                         </h3>
                         <p class="text-slate-600 text-base">기능을 선택하거나 기다리면 화면 예시가 바뀝니다.</p>
                     </div>
@@ -1056,8 +1076,24 @@
 
                             <!-- 탭 5 -->
                             <button onclick="changeFeature(4, true)"
-                                class="feature-tab snap-center flex-shrink-0 flex flex-col gap-0 rounded-2xl transition-all duration-500 border-2 cursor-pointer bg-[#f5f3ff]/40 hover:bg-[#f5f3ff] border-transparent"
+                                class="feature-tab snap-center flex-shrink-0 flex flex-col gap-0 rounded-2xl transition-all duration-500 border-2 cursor-pointer bg-[#f0fdfa]/40 hover:bg-[#f0fdfa] border-transparent"
                                 id="tab-4">
+                                <div class="flex items-center gap-3 p-2.5 pr-6">
+                                    <div
+                                        class="feature-icon-bg w-10 h-10 rounded-xl flex items-center justify-center shadow-sm transition-all duration-300 bg-teal-50 text-teal-500">
+                                        <iconify-icon icon="lucide:book-open" width="22"></iconify-icon>
+                                    </div>
+                                    <div class="font-bold text-[15px] feature-title transition-colors text-slate-500">용어사전</div>
+                                </div>
+                                <div class="w-full h-1 bg-teal-50 overflow-hidden text-teal-500">
+                                    <div class="progress-bar-inner"></div>
+                                </div>
+                            </button>
+
+                            <!-- 탭 6 -->
+                            <button onclick="changeFeature(5, true)"
+                                class="feature-tab snap-center flex-shrink-0 flex flex-col gap-0 rounded-2xl transition-all duration-500 border-2 cursor-pointer bg-[#f5f3ff]/40 hover:bg-[#f5f3ff] border-transparent"
+                                id="tab-5">
                                 <div class="flex items-center gap-3 p-2.5 pr-6">
                                     <div
                                         class="feature-icon-bg w-10 h-10 rounded-xl flex items-center justify-center shadow-sm transition-all duration-300 bg-purple-50 text-purple-500">
@@ -1114,7 +1150,7 @@
                             수업에서 본 슬라이드와 관련 본문을 함께 보고,<br class="hidden md:block" />
                             어려운 개념은 쉬운해설과 해설영상으로 다시 확인할 수 있습니다.<br class="hidden md:block" />
                             시험 전에는 추가 연습문제로 배운 내용을 점검하고,<br class="hidden md:block" />
-                            궁금한 점은 AI 챗봇에 질문할 수 있습니다.
+                            낯선 용어는 용어사전으로 확인하고 궁금한 점은 AI 챗봇에 질문할 수 있습니다.
                         </p>
                     </div>
                     <iconify-icon icon="lucide:graduation-cap"
@@ -1411,7 +1447,7 @@
                 desc: '어려운 개념을 <span class="text-emerald-600 font-bold px-1 rounded bg-emerald-50">더 쉽게 풀어 설명</span>해 줍니다.'
             },
             {
-                img: '해설영상.png',
+                img: '해설영상.png?v=82faf167',
                 activeBg: 'bg-white',
                 inactiveBg: 'bg-[#fff1f2]/40',
                 activeBorder: 'border-rose-200',
@@ -1427,6 +1463,15 @@
                 iconBgActive: 'bg-amber-100 text-amber-600',
                 iconBgInactive: 'bg-amber-100/50 text-amber-400',
                 desc: '시험 전 배운 내용을 <span class="text-amber-600 font-bold px-1 rounded bg-amber-50">문제로 확인</span>할 수 있습니다.'
+            },
+            {
+                img: '용어사전.png?v=2e921b2c',
+                activeBg: 'bg-white',
+                inactiveBg: 'bg-[#f0fdfa]/40',
+                activeBorder: 'border-teal-200',
+                iconBgActive: 'bg-teal-100 text-teal-600',
+                iconBgInactive: 'bg-teal-100/50 text-teal-400',
+                desc: '교재 본문에 등장하는 낯선 용어를 <span class="text-teal-600 font-bold px-1 rounded bg-teal-50">쉽고 명확하게 풀어 설명</span>해 줍니다.'
             },
             {
                 img: 'AI튜터.png',
